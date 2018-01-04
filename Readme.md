@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
-* Студент: [Svetlana Miezhelis](https://up.htmlacademy.ru/htmlcss/19/user/369121).
-* Наставник: `Неизвестно`.
+* Студент: [Nazzarik](https://google.com).
+* Наставник: `Нету`.
 
 ---
 
