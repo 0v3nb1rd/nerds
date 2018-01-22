@@ -8,7 +8,7 @@
 <body>
 	<header class="main-header">
 		<nav class="main-navigation">
-			<a class="main-header-logo">
+			<a class="main-header-logo" href="index.html">
 				<img src="img/nerds-logo.svg" width="160" height="65" alt="logo">
 			</a>
 			<ul class="site-navigation">
@@ -24,77 +24,112 @@
 		<h1>Магазин готовых шаблонов</h1>
 	</header>
 
-	<!-- <main class="container">
-		<h1 class="visability-hidden">Веб студия "Нёрдс"</h1>
-
-		<section class="offer">
-			<h2 class="visability-hidden">Наши преимущества</h2>
-
-			<ul class="offer-list">
-				<li class="offer-item">
-					<img src="img/features/illustration-1.png" alt="">
-					<h3 class="offer-name">Веб-сайты</h3>
-					<p>Мир никогда не будет прежним 
-					после того как увидит ваш сайт!</p>
-					<a href="#" class="btn">Заказать</a>
-				</li>
-				<li class="offer-item">
-					<img src="img/features/illustration-2.png" alt="">
-					<h3 class="offer-name">Приложения</h3>
-					<p>Покорите топ-10 приложений в 
-					AppStore и Google Play</p>
-					<a href="#" class="btn">Заказать</a>
-				</li>
-				<li class="offer-item">
-					<img src="img/features/illustration-3.png" alt="">
-					<h3 class="offer-name">Презентации</h3>
-					<p>Вы даже не подозреваете, 
-					насколько вы изумительны!</p>
-					<a href="#" class="btn">Заказать</a>
-				</li>
-			</ul>
-		</section>
-
-		<section class="about-us">
-			<div class="about-us-left">
-				<p class="lead">Мы — маленькая, но гордая
-				дизайн-студия из Краснодара.</p>
-				<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
-				превыше креатива. Работаем не покладая рук, как роботы.</p>
-				<h2>Выполняем заказы на разработку:</h2>
-				<ul class="about-us-we-do">
-					<li>Веб-сайтов любой сложности</li>
-					<li>Мобильных приложений для iOS и Android</li>
-					<li>Слайдшоу и видео для корпоративных презентаций</li>
+	<main class="container">
+		<aside class="filters">
+			<h2 class="visually-hidden">Фильтр товаров</h2>
+			<form action="#" class="filter" method="get">
+				<fieldset>
+					<legend>Стоимость:</legend>
+				</fieldset>
+				<fieldset>
+					<legend>Сетка:</legend>
+					<ul>
+						<li class="filter-option">
+							<input class="visually-hidden" type="radio" name="grid" value="adaptiv" checked>
+							Адаптивная
+						</li>
+						<li class="filter-option">
+							<input class="visually-hidden" type="radio" name="grid" value="features">
+							Особенности
+						</li>
+						<li class="filter-option">
+							<input class="visually-hidden" type="radio" name="grid" value="rubber">
+							Резиновая
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend>Особенности:</legend>
+					<ul>
+						<li>
+							<input class="visually-hidden" type="checkbox" name="feature-filtr">
+							Слайдер
+						</li>
+						<li>
+							<input class="visually-hidden" type="checkbox" name="feature-filtr">
+							Блок преимуществ
+						</li>
+						<li>
+							<input class="visually-hidden" type="checkbox" name="feature-filtr">
+							Новости
+						</li>
+						<li>
+							<input class="visually-hidden" type="checkbox" name="feature-filtr">
+							Галерея
+						</li>
+						<li>
+							<input class="visually-hidden" type="checkbox" name="feature-filtr">
+							Корзина
+					</li>
+					</ul>
+				</fieldset>
+				<button class="btn" type="submit">Показать</button>
+			</form>
+		</aside>
+		<section class="catalog">
+			<div class="catalog-sort">
+				<p>Сортировать:</p>
+				<ul>
+					<li class="sort-active">
+						<a href="#">По цене</a>
+					</li>
+					<li>
+						<a href="#">По типу</a>
+					</li>
+					<li>
+						<a href="#">По названию</a>
+					</li>
 				</ul>
 			</div>
-			<div class="about-us-right">
-				<img src="img/for-us.jpg" alt="logo">
-				<b>с 2004 года Любим точность во всем:</b>
-				<table>
-					<td><tr>146%</tr><tr>100%</tr><tr>50%</tr></td>
-					<td><tr>Уровень самоотдачи</tr><tr>Соблюдение сроков</tr><tr>Минимальная предоплата</tr></td>
-				</table>
+			<div class="catalog-sort-icon">
+				<a href=""></a>
 			</div>
-		</section>
+			<h2 class="visually-hidden">Список макетов</h2>
+			<article class="catalog-itam">
+				<img src="img/catalog/browser.svg" width="360" height="43" alt="window">
+				<a href="#"><img src="img/catalog/Фон.jpg" alt="kvast"></a>
+			</article>
 
-		<section class="partners">
-			<ul>
-				<li>
-					<a href="#" class="partners-item"><img src="img/partners/logo-1.png" alt="HTML-Academy"></a>
-				</li>
-				<li>
-					<a href="#" class="partners-item"><img src="img/partners/logo-2.png" alt="Барбершоп Borodinsky"></a>
-				</li>
-				<li>
-					<a href="#" class="partners-item"> <img src="img/partners/logo-3.png" alt="Pink"></a>
-				</li>
-				<li>
-					<a href="#" class="partners-item"><img src="img/partners/logo-4.png" alt="Mishka"></a>
-				</li>
-			</ul>
+			<article class="catalog-itam">
+				<img src="img/catalog/browser.svg" width="360" height="43" alt="window">
+				<a href="#"><img src="img/catalog/img-pink.jpg" alt="kvast"></a>
+			</article>
+			<article class="catalog-itam">
+				<img src="img/catalog/browser.svg" width="360" height="43" alt="window">
+				<a href="#"><img src="img/catalog/img-barbershop.jpg" alt="kvast"></a>
+			</article>
+			<article class="catalog-itam">
+				<img src="img/catalog/browser.svg" width="360" height="43" alt="window">
+				<a href="#"><img src="img/catalog/img-mishka.jpg" alt="kvast"></a>
+			</article>
+			<article class="catalog-itam">
+				<img src="img/catalog/browser.svg" width="360" height="43" alt="window">
+				<a href="#"><img src="img/catalog/img-aplus.jpg" alt="kvast"></a>
+			</article>
+			<article class="catalog-itam">
+				<img src="img/catalog/browser.svg" width="360" height="43" alt="window">
+				<a href="#"><img src="img/catalog/img-kvast.jpg" alt="kvast"></a>
+			</article>
+
+			<ul class="pagination-list">
+          <li class="pagination-item pagination-item-current"><a>1</a></li>
+          <li class="pagination-item"><a href="#">2</a></li>
+          <li class="pagination-item"><a href="#">3</a></li>
+          <li class="pagination-item"><a href="#">4</a></li>
+          <li class="pagination-item"><a href="#">Следующая</a></li>
+        </ul>
 		</section>
-	</main> -->
+	</main>
 
 	<footer class="footer">
 		<section class="map">
