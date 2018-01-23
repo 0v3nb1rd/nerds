@@ -18,7 +18,9 @@
 				<li><a href="#">Контакти</a></li>
 			</ul>
 			<ul>
-				<li><a href="#">Корзина</a></li>
+				<li class="basket-link">
+					<a class="basket-link" href="basket.html">Корзина</a>
+				</li>
 			</ul>
 		</nav>
 		<h1>Магазин готовых шаблонов</h1>
@@ -27,24 +29,26 @@
 	<main class="container">
 		<aside class="filters">
 			<h2 class="visually-hidden">Фильтр товаров</h2>
+
 			<form action="#" class="filter" method="get">
 				<fieldset>
 					<legend>Стоимость:</legend>
+					<input type="range" name="cost">
 				</fieldset>
 				<fieldset>
 					<legend>Сетка:</legend>
 					<ul>
 						<li class="filter-option">
-							<input class="visually-hidden" type="radio" name="grid" value="adaptiv" checked>
-							Адаптивная
+							<input class="visually-hidden" id="filter-adaptiv" type="radio" name="grid" value="adaptiv">
+							<label for="filter-adaptiv">Адаптивная</label>
 						</li>
 						<li class="filter-option">
-							<input class="visually-hidden" type="radio" name="grid" value="features">
-							Особенности
+							<input class="visually-hidden" id="filter-fixed" type="radio" name="grid" value="fixed" checked>
+							<label for="filter-fixed">Фиксированная</label>
 						</li>
 						<li class="filter-option">
-							<input class="visually-hidden" type="radio" name="grid" value="rubber">
-							Резиновая
+							<input class="visually-hidden" id="filter-rubber" type="radio" name="grid" value="rubber">
+							<label for="filter-rubber">Резиновая</label>
 						</li>
 					</ul>
 				</fieldset>
@@ -52,24 +56,24 @@
 					<legend>Особенности:</legend>
 					<ul>
 						<li>
-							<input class="visually-hidden" type="checkbox" name="feature-filtr">
-							Слайдер
+							<input class="visually-hidden" id="filter-slider" type="checkbox" name="slider">
+							<label for="filter-slider">Слайдер</label>
 						</li>
 						<li>
-							<input class="visually-hidden" type="checkbox" name="feature-filtr">
-							Блок преимуществ
+							<input class="visually-hidden" id="filter-block-features" type="checkbox" name="block-features">
+							<label for="filter-block-features">Блок преимуществ</label>
 						</li>
 						<li>
-							<input class="visually-hidden" type="checkbox" name="feature-filtr">
-							Новости
+							<input class="visually-hidden" id="filter-news" type="checkbox" name="news">
+							<label for="filter-news">Новости</label>
 						</li>
 						<li>
-							<input class="visually-hidden" type="checkbox" name="feature-filtr">
-							Галерея
+							<input class="visually-hidden" id="filter-gallery" type="checkbox" name="gallery">
+							<label for="filter-gallery">Галерея</label>
 						</li>
 						<li>
-							<input class="visually-hidden" type="checkbox" name="feature-filtr">
-							Корзина
+							<input class="visually-hidden" id="filter-basket" type="checkbox" name="basket">
+							<label for="filter-basket">Корзина</label>
 					</li>
 					</ul>
 				</fieldset>
@@ -95,38 +99,60 @@
 				<a href=""></a>
 			</div>
 			<h2 class="visually-hidden">Список макетов</h2>
-			<article class="catalog-itam">
-				<img src="img/catalog/browser.svg" width="360" height="43" alt="window">
-				<a href="#"><img src="img/catalog/Фон.jpg" alt="kvast"></a>
-			</article>
 
 			<article class="catalog-itam">
-				<img src="img/catalog/browser.svg" width="360" height="43" alt="window">
-				<a href="#"><img src="img/catalog/img-pink.jpg" alt="kvast"></a>
+				<a href="catalog-itam.html">
+					<img src="img/catalog/browser.svg" width="360" height="43" alt="window">
+					<img src="img/catalog/Фон.jpg" alt="kvast">
+				</a>
 			</article>
 			<article class="catalog-itam">
-				<img src="img/catalog/browser.svg" width="360" height="43" alt="window">
-				<a href="#"><img src="img/catalog/img-barbershop.jpg" alt="kvast"></a>
+				<a href="catalog-item.html">
+					<img src="img/catalog/browser.svg" width="360" height="43" alt="window">
+					<img src="img/catalog/img-pink.jpg" alt="kvast">
+				</a>
 			</article>
 			<article class="catalog-itam">
-				<img src="img/catalog/browser.svg" width="360" height="43" alt="window">
-				<a href="#"><img src="img/catalog/img-mishka.jpg" alt="kvast"></a>
+				<a href="catalog-item.html">
+					<img src="img/catalog/browser.svg" width="360" height="43" alt="window">
+					<img src="img/catalog/img-barbershop.jpg" alt="kvast">
+				</a>
 			</article>
 			<article class="catalog-itam">
-				<img src="img/catalog/browser.svg" width="360" height="43" alt="window">
-				<a href="#"><img src="img/catalog/img-aplus.jpg" alt="kvast"></a>
+				<a href="catalog-item.html">
+					<img src="img/catalog/browser.svg" width="360" height="43" alt="window">
+					<img src="img/catalog/img-mishka.jpg" alt="kvast">
+				</a>
 			</article>
 			<article class="catalog-itam">
-				<img src="img/catalog/browser.svg" width="360" height="43" alt="window">
-				<a href="#"><img src="img/catalog/img-kvast.jpg" alt="kvast"></a>
+				<a href="catalog-item.html">
+					<img src="img/catalog/browser.svg" width="360" height="43" alt="window">
+					<img src="img/catalog/img-aplus.jpg" alt="kvast">
+				</a>
+			</article>
+			<article class="catalog-itam">
+				<a href="catalog-item.html">
+					<img src="img/catalog/browser.svg" width="360" height="43" alt="window">
+					<img src="img/catalog/img-kvast.jpg" alt="kvast">
+				</a>
 			</article>
 
 			<ul class="pagination-list">
-          <li class="pagination-item pagination-item-current"><a>1</a></li>
-          <li class="pagination-item"><a href="#">2</a></li>
-          <li class="pagination-item"><a href="#">3</a></li>
-          <li class="pagination-item"><a href="#">4</a></li>
-          <li class="pagination-item"><a href="#">Следующая</a></li>
+          <li class="pagination-item pagination-item-current">
+          	<a>1</a>
+          </li>
+          <li class="pagination-item">
+          	<a href="#">2</a>
+          </li>
+          <li class="pagination-item">
+          	<a href="#">3</a>
+          </li>
+          <li class="pagination-item">
+          	<a href="#">4</a>
+          </li>
+          <li class="pagination-item">
+          	<a href="#">Следующая</a>
+          </li>
         </ul>
 		</section>
 	</main>
@@ -162,5 +188,25 @@
 			</div>
 		</section>
 	</footer>
+
+	<section class="modal modal-write-us">
+		<h2>Напишите нам</h2>
+      <form class="write-us-form" action="#" method="post">
+        <p>
+          <label class="user-name" for="user-name">Ваше имя:</label>
+          <input class="login-icon-user" id="user-name" type="text" name="user-name" placeholder="Представьтесь, пожалуйста">
+        </p>
+        <p>
+          <label class="user-mail" for="user-mail">Ваш e-mail:</label>
+          <input class="login-icon-password" id="user-mail" type="email" name="user-email" placeholder="Для отправки ответа">
+        </p>
+        <p>
+        	<label class="login-checkbox" for="text-letter">Текст письма:</label>
+          <input class="user-text-letter" id="text-letter" type="text" name="user-text" placeholder="В свободной форме">
+        </p>
+        <button class="btn btn-modal-send" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="btn">Закрить</button>
+	</section>
 </body>
 </html>
