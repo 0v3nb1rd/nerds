@@ -10,36 +10,38 @@
 </head>
 <body>
 	<header class="main-header">
-		<nav class="main-navigation">
-			<a class="main-header-logo">
-				<img src="img/nerds-logo.svg" width="160" height="65" alt="logo">
-			</a>
-			<ul class="site-navigation">
-				<li><a href="#">Студия</a></li>
-				<li><a href="#">Клиенти</a></li>
-				<li><a href="catalog.html">Магазин</a></li>
-				<li><a href="#">Контакти</a></li>
-			</ul>
-			<ul>
-				<li class="basket-link">
-					<a class="basket-link" href="basket.html">Корзина</a>
-				</li>
-			</ul>
-		</nav>
-		<section class="slider">
-			<div class="slider-column-left">
-				<b>Долго, дорого, 
-				скрупулезно.</b>
-				<p>Математически выверенный дизайн 
-				для вашего сайта или мобильного приложения.</p>
-				<a href="" class="btn">Узнать больше</a>
-			</div>
-			<div class="slider-column-right">
-				<figure>
-					<img src="img/slider/slide-1.png" width="698" height="413" alt="">
-				</figure>
-			</div>
-		</section>
+		<div class="container">
+			<nav class="main-navigation">
+				<a class="main-header-logo">
+					<img src="img/nerds-logo.svg" width="160" height="65" alt="logo">
+				</a>
+				<ul class="site-navigation">
+					<li><a href="#">Студия</a></li>
+					<li><a href="#">Клиенти</a></li>
+					<li><a href="catalog.html">Магазин</a></li>
+					<li><a href="#">Контакти</a></li>
+				</ul>
+				<ul>
+					<li class="basket-link">
+						<a class="basket-link" href="basket.html">Корзина</a>
+					</li>
+				</ul>
+			</nav>
+			<section class="slider">
+				<div class="slider-column-left">
+					<b>Долго, дорого, 
+					скрупулезно.</b>
+					<p>Математически выверенный дизайн 
+					для вашего сайта или мобильного приложения.</p>
+					<a href="" class="btn">Узнать больше</a>
+				</div>
+				<div class="slider-column-right">
+					<figure>
+						<img src="img/slider/slide-1.png" width="698" height="413" alt="">
+					</figure>
+				</div>
+			</section>
+		</div>
 	</header>
 
 	<main class="container">
@@ -75,34 +77,35 @@
 
 		<section class="about-us">
 			<h2 class="visually-hidden">Про нас</h2>
-
-			<div class="about-us-left">
-				<p class="lead">Мы — маленькая, но гордая
-				дизайн-студия из Краснодара.</p>
-				<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
-				превыше креатива. Работаем не покладая рук, как роботы.</p>
-				<h3>Выполняем заказы на разработку:</h3>
-				<ul class="about-us-we-do">
-					<li>Веб-сайтов любой сложности</li>
-					<li>Мобильных приложений для iOS и Android</li>
-					<li>Слайдшоу и видео для корпоративных презентаций</li>
-				</ul>
-			</div>
-			<div class="about-us-right">
-				<img src="img/for-us.jpg" alt="logo">
-				<b>с 2004 года Любим точность во всем:</b>
-				<table class="about-us-stat">
-					<tr>
-						<th>146<sup>%</sup></th>
-						<th>100<sup>%</sup></th>
-						<th>50<sup>%</sup></th>
-					</tr>
-					<tr>
-						<td>Уровень самоотдачи</td>
-						<td>Соблюдение сроков</td>
-						<td>Минимальная предоплата</td>
-					</tr>
-				</table>
+			<div class="about-us-wrapper">
+				<div class="about-us-left">
+					<p class="lead">Мы — маленькая, но гордая
+					дизайн-студия из Краснодара.</p>
+					<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
+					превыше креатива. Работаем не покладая рук, как роботы.</p>
+					<h3>Выполняем заказы на разработку:</h3>
+					<ul class="about-us-we-do">
+						<li>Веб-сайтов любой сложности</li>
+						<li>Мобильных приложений для iOS и Android</li>
+						<li>Слайдшоу и видео для корпоративных презентаций</li>
+					</ul>
+				</div>
+				<div class="about-us-right">
+					<img src="img/for-us.jpg" alt="logo">
+					<b>с 2004 года Любим точность во всем:</b>
+					<table class="about-us-stat">
+						<tr>
+							<th>146<sup>%</sup></th>
+							<th>100<sup>%</sup></th>
+							<th>50<sup>%</sup></th>
+						</tr>
+						<tr>
+							<td>Уровень самоотдачи</td>
+							<td>Соблюдение сроков</td>
+							<td>Минимальная предоплата</td>
+						</tr>
+					</table>
+				</div>
 			</div>
 		</section>
 
@@ -124,23 +127,21 @@
 		</section>
 	</main>
 
-	<footer class="footer">
-		<section class="map">
-			<h2 class="visualli-hidden">Как до нас добратся</h2>
+	<section class="map">
+		<h2 class="visualli-hidden">Как до нас добратся</h2>
 
-			<p>
-				<img src="img/map-static.jpg"  alt="оффис компании по адрессу: Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
-				<div class="map-adres-box">
-					<h3>NЁRDS DESIGN STUDIO</h3>
-					<p>191186, Санкт-Петербург, 
-					ул. Б. Конюшенная, д. 19/8</p>
-					<p>тел. +7 (812) 275-75-75</p>
-					<a class="btn" href="#">Напишите нам</a>
-				</div>
-			</p>
-		</section>
+			<img src="img/map-static.jpg"  alt="оффис компании по адрессу: Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+			<div class="map-adres-box">
+				<h3>NЁRDS DESIGN STUDIO</h3>
+				<p>191186, Санкт-Петербург, 
+				ул. Б. Конюшенная, д. 19/8</p>
+				<p>тел. +7 (812) 275-75-75</p>
+				<a class="btn" href="#">Напишите нам</a>
+			</div>
+	</section>
 
-		<section class="social container">
+
+		<footer class="social container">
 			<div class="social-btn">
 				<ul>
 					<li>
@@ -158,8 +159,7 @@
 				<b>Давайте дружить, это выгодно!</b>
 				<p>Скидка 10% для друзей из социальных сетей.</p>
 			</div>
-		</section>
-	</footer>
+		</footer>
 
 	<section class="modal modal-write-us">
 		<h2>Напишите нам</h2>

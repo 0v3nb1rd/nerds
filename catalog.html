@@ -10,7 +10,8 @@
 </head>
 <body>
 	<header class="main-header">
-		<nav class="main-navigation">
+		<div class="container">
+		<nav class="main-navigation ">
 			<a class="main-header-logo" href="index.html">
 				<img src="img/nerds-logo.svg" width="160" height="65" alt="logo">
 			</a>
@@ -27,9 +28,10 @@
 			</ul>
 		</nav>
 		<h1>Магазин готовых шаблонов</h1>
+		</div>
 	</header>
 
-	<main class="container">
+	<main class="main-wrapper container">
 		<aside class="filters">
 			<h2 class="visually-hidden">Фильтр товаров</h2>
 
@@ -102,44 +104,44 @@
 				<a href=""></a>
 			</div>
 			<h2 class="visually-hidden">Список макетов</h2>
-
-			<article class="catalog-itam">
-				<a href="catalog-itam.html">
-					<img src="img/catalog/browser.svg" width="360" height="43" alt="window">
-					<img src="img/catalog/Фон.jpg" alt="kvast">
-				</a>
-			</article>
-			<article class="catalog-itam">
-				<a href="catalog-item.html">
-					<img src="img/catalog/browser.svg" width="360" height="43" alt="window">
-					<img src="img/catalog/img-pink.jpg" alt="kvast">
-				</a>
-			</article>
-			<article class="catalog-itam">
-				<a href="catalog-item.html">
-					<img src="img/catalog/browser.svg" width="360" height="43" alt="window">
-					<img src="img/catalog/img-barbershop.jpg" alt="kvast">
-				</a>
-			</article>
-			<article class="catalog-itam">
-				<a href="catalog-item.html">
-					<img src="img/catalog/browser.svg" width="360" height="43" alt="window">
-					<img src="img/catalog/img-mishka.jpg" alt="kvast">
-				</a>
-			</article>
-			<article class="catalog-itam">
-				<a href="catalog-item.html">
-					<img src="img/catalog/browser.svg" width="360" height="43" alt="window">
-					<img src="img/catalog/img-aplus.jpg" alt="kvast">
-				</a>
-			</article>
-			<article class="catalog-itam">
-				<a href="catalog-item.html">
-					<img src="img/catalog/browser.svg" width="360" height="43" alt="window">
-					<img src="img/catalog/img-kvast.jpg" alt="kvast">
-				</a>
-			</article>
-
+			<div class="article-wrapper">
+				<article class="catalog-itam">
+					<a href="catalog-itam.html">
+						<img src="img/catalog/browser.svg" width="360" height="43" alt="window">
+						<img src="img/catalog/Фон.jpg" alt="kvast">
+					</a>
+				</article>
+				<article class="catalog-itam">
+					<a href="catalog-item.html">
+						<img src="img/catalog/browser.svg" width="360" height="43" alt="window">
+						<img src="img/catalog/img-pink.jpg" alt="kvast">
+					</a>
+				</article>
+				<article class="catalog-itam">
+					<a href="catalog-item.html">
+						<img src="img/catalog/browser.svg" width="360" height="43" alt="window">
+						<img src="img/catalog/img-barbershop.jpg" alt="kvast">
+					</a>
+				</article>
+				<article class="catalog-itam">
+					<a href="catalog-item.html">
+						<img src="img/catalog/browser.svg" width="360" height="43" alt="window">
+						<img src="img/catalog/img-mishka.jpg" alt="kvast">
+					</a>
+				</article>
+				<article class="catalog-itam">
+					<a href="catalog-item.html">
+						<img src="img/catalog/browser.svg" width="360" height="43" alt="window">
+						<img src="img/catalog/img-aplus.jpg" alt="kvast">
+					</a>
+				</article>
+				<article class="catalog-itam">
+					<a href="catalog-item.html">
+						<img src="img/catalog/browser.svg" width="360" height="43" alt="window">
+						<img src="img/catalog/img-kvast.jpg" alt="kvast">
+					</a>
+				</article>
+			</div>
 			<ul class="pagination-list">
           <li class="pagination-item pagination-item-current">
           	<a>1</a>
@@ -160,7 +162,6 @@
 		</section>
 	</main>
 
-	<footer class="footer">
 		<section class="map">
 			<img src="img/map-static.jpg" alt="как к нам добратся">
 			<div class="map-adres-box">
@@ -171,7 +172,8 @@
 				<a class="btn" href="#">Напишите нам</a>
 			</div>
 		</section>
-		<section class="social container">
+
+		<footer class="social container">
 			<div class="social-btn">
 				<ul>
 					<li>
@@ -189,8 +191,7 @@
 				<b>Давайте дружить, это выгодно!</b>
 				<p>Скидка 10% для друзей из социальных сетей.</p>
 			</div>
-		</section>
-	</footer>
+		</footer>
 
 	<section class="modal modal-write-us">
 		<h2>Напишите нам</h2>
