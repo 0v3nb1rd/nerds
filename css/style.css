@@ -1,5 +1,19 @@
 /*     /////     Basic style     /////     */
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+html {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.content-box-component {
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
 body {
+	min-width: 1200px;
 	margin: 0;
 	padding: 0;
 
@@ -9,19 +23,52 @@ body {
 	font-weight: 400;
 	color: #283136;
 }
-a {
-	text-decoration: none;
-}
 .container {
 	width: 1200px;
 	margin: 0 auto;
 	padding: 0 10px;
 }
+a {
+	text-decoration: none;
+}
 img {
 	min-width: 100%;
 	height: auto;
 }
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+	position: absolute;
 
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+
+	white-space: nowrap;
+
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+/*     /////     .Btn     /////     */
+.btn {
+	font: inherit;
+	
+	font-size: 16px;
+	line-height: 18px;
+	text-align: center;
+	color: #fff;
+	vertical-align: middle;
+	text-transform: uppercase;
+
+	background-color: #fb565a;
+	border: none;
+}
+
+/*     /////     .Header     /////     */
 .main-header {
 	background-color: #eeeeee;
 }
@@ -29,7 +76,26 @@ img {
 	display: flex;
 	justify-content: space-between;
 }
-
+.main-navigation ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.main-navigation .site-navigation {
+	display: flex;
+	min-width: 440px;
+	
+}
+.main-header-logo {
+	width: 160px;
+	height: 65px;
+}
+.main-header-logo img:hover {
+	opacity: 0.8;
+}
+.main-header-logo img:active {
+	opacity: 0.3;
+}
 .main-header h1 {
 	text-align: center;
 	font-size: 55px;
@@ -37,10 +103,8 @@ img {
 	font-weight: 400;
 	color: #000;
 }
-.main-wrapper {
-	display: flex;
-	justify-content: space-between;
-}
+
+
 .filters {
 	width: 260px;
 }
@@ -57,10 +121,6 @@ img {
 	margin-bottom: 20px;
 }
 
-.site-navigation,
-.basket-link {
-	list-style: none;
-}
 .site-navigation a,
 .basket-link a {
 	color: #000;
@@ -101,19 +161,7 @@ img {
 }
 
 /*     /////     .Button basic     /////     */
-.btn {
-	font: inherit;
-	
-	font-size: 16px;
-	line-height: 18px;
-	text-align: center;
-	color: #fff;
-	vertical-align: middle;
-	text-transform: uppercase;
 
-	background-color: #fb565a;
-	border: none;
-}
 
 .btn-pink:hover,
 .btn-pink:focus {
