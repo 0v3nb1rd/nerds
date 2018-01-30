@@ -21,7 +21,7 @@
 					<li><a href="catalog.html">Магазин</a></li>
 					<li><a href="#">Контакти</a></li>
 				</ul>
-				<ul>
+				<ul class="user-navigation">
 					<li>
 						<a class="basket-link" href="basket.html">Корзина</a>
 					</li>
@@ -33,13 +33,11 @@
 					скрупулезно.</b>
 					<p>Математически выверенный дизайн 
 					для вашего сайта или мобильного приложения.</p>
-					<a href="" class="btn">Узнать больше</a>
+					<a href="" class="btn btn-pink">Узнать больше</a>
 				</div>
-				<div class="slider-column-right">
-					<figure>
-						<img src="img/slider/slide-1.png" width="698" height="413" alt="">
-					</figure>
-				</div>
+				<figure class="slider-column-right">
+					<img src="img/slider/slide-1.png" width="698" height="413" alt="">
+				</figure>
 			</section>
 		</div>
 	</header>
@@ -77,11 +75,10 @@
 
 		<section class="about-us">
 			<h2 class="visually-hidden">Про нас</h2>
-			<div class="about-us-wrapper">
 				<div class="about-us-left">
 					<p class="lead">Мы — маленькая, но гордая
 					дизайн-студия из Краснодара.</p>
-					<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
+					<p class="lead-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет
 					превыше креатива. Работаем не покладая рук, как роботы.</p>
 					<h3>Выполняем заказы на разработку:</h3>
 					<ul class="about-us-we-do">
@@ -93,7 +90,7 @@
 				<div class="about-us-right">
 					<img src="img/for-us.jpg" alt="logo">
 					<b>с 2004 года Любим точность во всем:</b>
-					<table class="about-us-stat">
+					<table class="about-us-table">
 						<tr>
 							<th>146<sup>%</sup></th>
 							<th>100<sup>%</sup></th>
@@ -106,7 +103,6 @@
 						</tr>
 					</table>
 				</div>
-			</div>
 		</section>
 
 		<section class="brands">
@@ -128,57 +124,70 @@
 	</main>
 
 	<section class="map">
-		<h2 class="visualli-hidden">Как до нас добратся</h2>
-
-			<img src="img/map-static.jpg"  alt="оффис компании по адрессу: Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+		<h2 class="visually-hidden">Как до нас добратся</h2>
+		
+		<div class="container">
 			<div class="map-adres-box">
-				<h3>NЁRDS DESIGN STUDIO</h3>
-				<p>191186, Санкт-Петербург, 
+			<h3>NЁRDS DESIGN STUDIO</h3>
+			<p>191186, Санкт-Петербург, 
 				ул. Б. Конюшенная, д. 19/8</p>
-				<p>тел. +7 (812) 275-75-75</p>
-				<a class="btn" href="#">Напишите нам</a>
+			<p>тел. +7 (812) 275-75-75</p>
+			<a class="btn" href="#">Напишите нам</a>
 			</div>
+		</div>
+		<div class="map-old">
+			<img src="img/map-old.png"  alt="оффис компании по адрессу: Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+		</div>
 	</section>
 
+	<footer class="main-footer container">
 
-		<footer class="social container">
-			<div class="social-btn">
+			<div class="footer-social">
 				<ul>
 					<li>
-						<a href="#"><img src="img/soc-icons/vk-icon.png" alt="Вконтакте">Вконтакте</a>
+						<a class="social-btn social-btn-vk" href="#"><span class="visually-hidden">Вконтакте</span>
+							<img src="img/soc-icons/vk-icon.svg" width="25" height="25" alt="Вконтакте">
+						</a>
 					</li>
 					<li>
-						<a href="#"><img src="img/soc-icons/fb-icon.png" alt="Фейсбук">Фейсбук</a>
+						<a class="social-btn social-btn-fb" href="#"><span class="visually-hidden">Фейсбук</span>
+							<img src="img/soc-icons/fb-icon.svg" width="12px" height="22px" alt="Фейсбук">
+						</a>
 					</li>
 					<li>
-						<a href="#"><img src="img/soc-icons/insta-icon.png" alt="Инстаграм">Инстаграм</a>
+						<a class="social-btn social-btn-inst" href="#"><span class="visually-hidden">Инстаграм</span>
+							<img src="img/soc-icons/insta-icon.svg" alt="Инстаграм">
+						</a>
 					</li>
 				</ul>
 			</div>
+
 			<div class="social-discount">
 				<b>Давайте дружить, это выгодно!</b>
 				<p>Скидка 10% для друзей из социальных сетей.</p>
 			</div>
-		</footer>
+	</footer>
 
 	<section class="modal modal-write-us">
-		<h2>Напишите нам</h2>
-      <form class="write-us-form" action="#" method="post">
-        <p>
-          <label class="user-name " for="user-name">Ваше имя:</label>
-          <input class="login-icon-user" id="user-name" type="text" name="user-name" placeholder="Представьтесь, пожалуйста">
-        </p>
-        <p>
-          <label class="user-mail" for="user-mail">Ваш e-mail:</label>
-          <input class="login-icon-password" id="user-mail" type="email" name="user-email" placeholder="Для отправки ответа">
-        </p>
-        <p>
-        	<label class="login-checkbox" for="text-letter">Текст письма:</label>
-          <input class="user-text-letter" id="text-letter" type="text" name="user-text" placeholder="В свободной форме">
-        </p>
-        <button class="btn btn-modal-send" type="submit">Отправить</button>
-      </form>
-      <button class="modal-close" type="btn">Закрить</button>
+    <form class="write-us-form" action="#" method="post">
+    	<legend>Напишите нам</legend>
+    	<div class="form-wrapper">
+	      <p>
+	        <label class="user-name " for="user-name">Ваше имя:</label>
+	        <input class="login-icon-user" id="user-name" type="text" name="user-name" placeholder="Представьтесь, пожалуйста">
+	      </p>
+	      <p>
+	        <label class="user-mail" for="user-mail">Ваш e-mail:</label>
+	        <input class="login-icon-password" id="user-mail" type="email" name="user-email" placeholder="Для отправки ответа">
+	      </p>
+	      <p class="textarea-form">
+	      	<label class="login-checkbox" for="text-letter">Текст письма:</label>
+	        <textarea id="text-letter" name="user-text" placeholder="В свободной форме"></textarea> 
+	      </p>
+      </div>
+      <button class="btn btn-modal-send" type="submit">Отправить</button>
+    </form>
+    <button class="modal-close" type="button">Закрить</button>
 	</section>
 </body>
 </html>
