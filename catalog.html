@@ -37,7 +37,7 @@
 		<aside class="filters">
 			<h2 class="visually-hidden">Фильтр товаров</h2>
 
-			<form action="#" class="filter" method="get">
+			<form action="#" class="main-filter" method="get">
 				<fieldset>
 					<legend>Стоимость:</legend>
 					<input type="range" name="cost">
@@ -46,9 +46,12 @@
 					<legend>Сетка:</legend>
 					<ul>
 						<li class="filter-option">
-							<input class="visually-hidden" id="filter-adaptiv" type="radio" name="grid" value="adaptiv">
-							<label for="filter-adaptiv">Адаптивная</label>
+							<label>
+								<input class="visually-hidden" type="radio" name="grid" value="adaptiv">
+								<span>Адаптивная</span>
+							</label>
 						</li>
+
 						<li class="filter-option">
 							<input class="visually-hidden" id="filter-fixed" type="radio" name="grid" value="fixed" checked>
 							<label for="filter-fixed">Фиксированная</label>
@@ -164,55 +167,71 @@
 		</section>
 	</main>
 
-		<section class="map">
-			<img src="img/map-static.jpg" alt="как к нам добратся">
+	<section class="map">
+		<h2 class="visually-hidden">Как до нас добратся</h2>
+		
+		<div class="container">
 			<div class="map-adres-box">
-				<h3>NЁRDS DESIGN STUDIO</h3>
-				<p>191186, Санкт-Петербург, 
+			<h3>NЁRDS DESIGN STUDIO</h3>
+			<p>191186, Санкт-Петербург, 
 				ул. Б. Конюшенная, д. 19/8</p>
-				<p>тел. +7 (812) 275-75-75</p>
-				<a class="btn" href="#">Напишите нам</a>
+			<p>тел. +7 (812) 275-75-75</p>
+			<a class="btn" href="#">Напишите нам</a>
 			</div>
-		</section>
+		</div>
+		<div class="map-old">
+			<img src="img/map-old.png"  alt="оффис компании по адрессу: Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+		</div>
+	</section>
 
-		<footer class="social container">
-			<div class="social-btn">
+	<footer class="main-footer container">
+
+			<div class="footer-social">
 				<ul>
 					<li>
-						<a href="#"><img src="img/soc-icons/vk-icon.png" alt="Вконтакте">Вконтакте</a>
+						<a class="social-btn social-btn-vk" href="#"><span class="visually-hidden">Вконтакте</span>
+							<img src="img/soc-icons/vk-icon.svg" width="25" height="25" alt="Вконтакте">
+						</a>
 					</li>
 					<li>
-						<a href="#"><img src="img/soc-icons/fb-icon.png" alt="Фейсбук">Фейсбук</a>
+						<a class="social-btn social-btn-fb" href="#"><span class="visually-hidden">Фейсбук</span>
+							<img src="img/soc-icons/fb-icon.svg" width="12px" height="22px" alt="Фейсбук">
+						</a>
 					</li>
 					<li>
-						<a href="#"><img src="img/soc-icons/insta-icon.png" alt="Инстаграм">Инстаграм</a>
+						<a class="social-btn social-btn-inst" href="#"><span class="visually-hidden">Инстаграм</span>
+							<img src="img/soc-icons/insta-icon.svg" alt="Инстаграм">
+						</a>
 					</li>
 				</ul>
 			</div>
+
 			<div class="social-discount">
 				<b>Давайте дружить, это выгодно!</b>
 				<p>Скидка 10% для друзей из социальных сетей.</p>
 			</div>
-		</footer>
+	</footer>
 
 	<section class="modal modal-write-us">
-		<h2>Напишите нам</h2>
-      <form class="write-us-form" action="#" method="post">
-        <p>
-          <label class="user-name" for="user-name">Ваше имя:</label>
-          <input class="login-icon-user" id="user-name" type="text" name="user-name" placeholder="Представьтесь, пожалуйста">
-        </p>
-        <p>
-          <label class="user-mail" for="user-mail">Ваш e-mail:</label>
-          <input class="login-icon-password" id="user-mail" type="email" name="user-email" placeholder="Для отправки ответа">
-        </p>
-        <p>
-        	<label class="login-checkbox" for="text-letter">Текст письма:</label>
-          <input class="user-text-letter" id="text-letter" type="text" name="user-text" placeholder="В свободной форме">
-        </p>
-        <button class="btn btn-modal-send" type="submit">Отправить</button>
-      </form>
-      <button class="modal-close" type="btn">Закрить</button>
+    <form class="write-us-form" action="#" method="post">
+    	<legend>Напишите нам</legend>
+    	<div class="form-wrapper">
+	      <p>
+	        <label class="user-name " for="user-name">Ваше имя:</label>
+	        <input class="login-icon-user" id="user-name" type="text" name="user-name" placeholder="Представьтесь, пожалуйста">
+	      </p>
+	      <p>
+	        <label class="user-mail" for="user-mail">Ваш e-mail:</label>
+	        <input class="login-icon-password" id="user-mail" type="email" name="user-email" placeholder="Для отправки ответа">
+	      </p>
+	      <p class="textarea-form">
+	      	<label class="login-checkbox" for="text-letter">Текст письма:</label>
+	        <textarea id="text-letter" name="user-text" placeholder="В свободной форме"></textarea> 
+	      </p>
+      </div>
+      <button class="btn btn-modal-send" type="submit">Отправить</button>
+    </form>
+    <button class="modal-close" type="button">Закрить</button>
 	</section>
 </body>
 </html>
