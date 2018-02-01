@@ -26,7 +26,7 @@ body {
 .container {
 	width: 1200px;
 	margin: 0 auto;
-	padding: 0 10px;
+	padding: 0 20px;
 }
 a {
 	text-decoration: none;
@@ -157,23 +157,92 @@ input[type="radio"].visually-hidden {
 	color: #000;
 }
 
-.slider {
-	display: flex;
+/*     /////     .Slider     /////      */
+
+.slider {	
+	position: relative;
+	height: 430px;
+	width: 1160px;
+	margin: 0 auto;
+	/*border: 1px solid #000;*/
 }
-.slider-column-left {
-	padding: 80px 0;
+/*.slider input[type="radio"] {
+	position: absolute;
+	opacity: 1;
+}*/
+
+.slider-controls {
+	position: absolute;
+	bottom: 95px;
+	left: 50%;
+	width: 200px;
+	height: 20px;
+	margin-left: -100px;
+	text-align: center;
+	/*border: 1px solid green;*/
+	z-index: 1000;
 }
-.slider-column-left b {
+.slider-controls i {
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	margin: 0 3px;
+	background-color: #fff;
+	border: 4px solid #fff;
+	vertical-align: top;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.slider-controls .active {
+	background-color: #c1c1c1;
+}
+.slide {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	/*background-color: rgba(255,255,0,0.1);*/
+}
+.slide-text {
+		width: 520px;
+	margin: 80px 0;
+	color: #283136;
+}
+.slide-text p {
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+.slide-title {
 	font-size: 55px;
 	line-height: 55px;
-	font-weight: 400;
-	color: #000;
+	font-weight: 300;
 }
-.slider-column-right {
-	width: 698px;
-	height: 415px;
-	margin: 0 30px;
+
+.slide:nth-child(1) {
+	background-image: url("../img/slider/slide-1.png");
+	background-position: 100% 20px;
+	background-repeat: no-repeat;
 }
+.slide:nth-child(2) {
+	background-image: url("../img/slider/slide-2.png");
+	background-position: 100% 0;
+	background-repeat: no-repeat;
+}
+.slide:nth-child(3) {
+	background-image: url("../img/slider/slide-3.png");
+	background-position: 100% 20px;
+	background-repeat: no-repeat;
+}
+.slide {
+	display: none;
+}
+.slide:nth-child(1) {
+	display: block;
+}
+
+
 
 /*     /////     .Btn     /////     */
 .btn {
@@ -216,6 +285,79 @@ input[type="radio"].visually-hidden {
 	font-weight: 900;
 	color: #000;
 }
+
+/*     //////     .Range filter     /////     */
+.range-filter {
+	width: 260px;
+	margin: 50px auto;
+}
+.range-controls {
+	position: relative;
+	height: 80px;
+	margin-bottom: 15px;
+	padding: 0 30px;
+	background-color: #f1f1f1;
+	border-radius: 5px;
+	overflow: hidden;
+}
+.range-controls .scale {
+	margin-top: 39px;
+	height: 2px;
+	background-color: #d7dcde;
+}
+.range-controls .bar {
+	height: 2px;
+	background-color: #00ca74;
+}
+.range-controls .toggle {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	width: 20px;
+	height: 20px;
+	border: 8px solid white;
+	background-color: #ababab;
+	cursor: pointer;
+	border-radius: 50%;
+	box-shadow: 0 2px 1px 0 #cfcfcf;
+	/*opacity: 0.2;*/
+}
+.range-controls .min-toggle {
+	left: 20px;
+}
+.range-controls .max-toggle {
+	left: 220px;
+}
+.price-controls {
+	position: relative;
+}
+.price-controls label {
+	position: absolute;
+}
+.price-controls .min-price {
+	left: 0;
+}
+.price-controls .max-price {
+	right: 0;
+}
+.price-controls input {
+	width: 80px;
+	padding: 8px 10px;
+	margin-left: 10px;
+	border: none;
+	background-color: #f1f1f1;
+	font: inherit;
+	line-height: 22px;
+	text-align: center;
+	color: #283136;
+	border-radius: 5px;
+}
+
+
+
+
+
+
 .main-filter ul {
 	margin: 0;
 	list-style: none;

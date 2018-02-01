@@ -40,7 +40,23 @@
 			<form action="#" class="main-filter" method="get">
 				<fieldset>
 					<legend>Стоимость:</legend>
-					<input type="range" name="cost">
+					<div class="range-filter">
+						<div class="range-controls">
+							<div class="scale">
+								<div class="bar" style="width:100%;"></div>
+							</div>
+							<div class="toggle min-toggle"></div>
+							<div class="toggle max-toggle"></div>
+						</div>
+						<div class="price-controls">
+							<label class="min-price">От
+								<input type="text" value="0" name="min-price">
+							</label>
+							<label class="max-price">До
+								<input type="text" value="15000" name="max-price">
+							</label>
+						</div>
+					</div>
 				</fieldset>
 				<fieldset>
 					<legend>Сетка:</legend>
