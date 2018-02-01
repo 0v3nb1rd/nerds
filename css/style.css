@@ -166,10 +166,10 @@ input[type="radio"].visually-hidden {
 	margin: 0 auto;
 	/*border: 1px solid #000;*/
 }
-/*.slider input[type="radio"] {
+.slider input[type="radio"] {
 	position: absolute;
-	opacity: 1;
-}*/
+	opacity: 0;
+}
 
 .slider-controls {
 	position: absolute;
@@ -182,7 +182,7 @@ input[type="radio"].visually-hidden {
 	/*border: 1px solid green;*/
 	z-index: 1000;
 }
-.slider-controls i {
+.slider-controls label {
 	display: inline-block;
 	width: 18px;
 	height: 18px;
@@ -193,9 +193,14 @@ input[type="radio"].visually-hidden {
 	border-radius: 50%;
 	cursor: pointer;
 }
-.slider-controls .active {
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"] {
 	background-color: #c1c1c1;
 }
+/*.slider-controls .active {
+	background-color: #c1c1c1;
+}*/
 .slide {
 	position: absolute;
 	top: 0;
@@ -238,10 +243,18 @@ input[type="radio"].visually-hidden {
 .slide {
 	display: none;
 }
-.slide:nth-child(1) {
+/*.slide:nth-child(1) {
+	display: block;
+}*/
+#btn-1:checked ~ .slides .slide:nth-child(1) {
 	display: block;
 }
-
+#btn-2:checked ~ .slides .slide:nth-child(2) {
+	display: block;
+}
+#btn-3:checked ~ .slides .slide:nth-child(3) {
+	display: block;
+}
 
 
 /*     /////     .Btn     /////     */
