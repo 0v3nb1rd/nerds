@@ -52,6 +52,32 @@ input[type="radio"].visually-hidden {
 	clip: rect(0 0 0 0);
 	overflow: hidden;
 }
+/*     /////     Animation     /////     */
+@keyframes bonce {
+	0% {
+		transform: translate(-50%, 150%);
+	}
+	40% {
+		transform: translate(-50%, -70%);
+	}
+	70% {
+		transform: translate(-50%, -40%);
+	}
+	100% {
+		transform: translate(-50%, -50%);
+	}
+}
+@keyframes shake {
+	0%, 100% {
+		transform: translate(-50%, -50%);
+	}
+	40%, 80%  {
+		transform: translate(-45%, -50%);
+	}
+ 	20%, 60% {
+		transform: translate(-55%, -50%);
+	}
+}
 
 /*     /////     .Header     /////     */
 .main-header {
@@ -884,7 +910,7 @@ color: rgba(255, 255, 255, 0.3);
 	padding-left: 20px;
 	padding-right: 20px;
 }
-.map-old::after {
+/*.map-old::after {
 	content: "";
 	position: absolute;
 	top: 140px;
@@ -892,7 +918,7 @@ color: rgba(255, 255, 255, 0.3);
 	width: 231px;
 	height: 190px;
 	background: transparent url("../img/map-marker.png") 0 0 no-repeat;
-}
+}*/
 
 /*     /////     .Footer     /////mai*/
 .main-footer {
@@ -1067,6 +1093,15 @@ color: rgba(255, 255, 255, 0.3);
 	width: 260px;
 }
 
+.modal-show {
+	display: inline-block;
+	animation-name: bonce;
+	animation-duration: 0.6s;
+}
+.modal-error {
+	animation-name: shake;
+	animation-duration: 0.6s;
+}
 
 
 
